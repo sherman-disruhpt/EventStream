@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Front conversations reader</title>
+    <link rel="stylesheet" href="/stylesheets/test.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="/scripts/index.js"></script>
+  </head>
+  <body>
+    <h1>Hello!</h1>
+
+    <p>Welcome to the Front-End engineering exercise for <a href="https://frontapp.com">Front</a>.</p>
+
+    <p>Your role is to update this javascript application to:</p>
+
+    <ul class="tasks">
+      <li>Handle the events received via websocket (cf: <pre>Store#handleEvent</pre>).</li>
+      <li>Implement <pre>Store#conversations</pre> to return the list of conversations stored in your app.</li>
+    </ul>
+
+    <p>
+      Note: In a real time application we would display the list of conversations and messages in a UI similar to Front web
+      application.
+      Here we will simply display the number of conversations: <strong id="conversations-count">0</strong>
+    </p>
+
+    <p>
+      By clicking on "Start" bellow, your client will start receiving events from the server.<br>
+      Once all the events have been received, the application will log the result of your test in your dev tools console.
+    </p>
+
+    <p>
+      Ready? <br>
+      <input id="stream" type="button" value="Start streaming"> or
+      <input id="step-by-step" type="button" value="Receive next event">
+    </p>
+
+    <p>
+      Good luck,<br>
+      --<br>
+      The engineering team at Front
+    </p>
+  </body>
+</html>
